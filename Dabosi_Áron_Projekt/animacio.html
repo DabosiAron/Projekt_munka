@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kaszínó</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1>KASZINÓ</h1>
+
+        <nav id="topnav">
+            <ul>
+                <li><a href="fooldal.html">Főoldal</a></li>
+
+                <li class="dropdown">
+                    <a href="#nogo">Infó</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="animacio.html">Animáció</a></li>
+                        <li><a href="urlap.html">Űrlap</a></li>
+                        <li><a href="tablazat.html">Tábla</a></li>
+                        <li><a href="galeria.html">Galéria</a></li>
+                        <li><a href="media.html">Média</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#nogo">Impresszum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+       
+        <article>
+          
+            <div id="center">
+            <div id="kerek"></div>
+            <button id="spinBtn">Pörgetés</button>
+            </div>
+        </article>
+    </section>
+
+    <footer class="page-footer">
+
+        <div class="footer-boxes">
+            <div class="footer-col">
+                <h3>Kaszinó weboldalak</h3>
+                <ul>
+                    <li><a href="https://vegas.hu/">Vegas</a></li>
+                    <li><a href="https://www.pokerstars.com/hu/casino/">Pokerstars</a></li>
+                    <li><a href="https://kaszino.hu/">Kaszinó.hu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Kaszinó extrák és szabályok</h3>
+                <ul>
+                    <li><a href="#nogo">Stratégiák</a></li>
+                    <li><a href="#nogo">Érdekességek</a></li>
+                    <li><a href="#nogo">További infók</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">
+            Copyright © 2025 | Dabosi Áron
+        </p>
+
+    </footer>
+</body>
+
+</html>
+
+<script>
+let kerek = document.getElementById("kerek");
+let gomb = document.getElementById("spinBtn");
+
+let aktualisSzog = 0;
+
+gomb.onclick = () => {
+
+    gomb.disabled = true; 
+
+   
+    let randomExtra = Math.floor(Math.random() * 360);
+    let celSzog = 1800 + randomExtra;
+
+    aktualisSzog += celSzog;
+
+    kerek.style.transform = `rotate(${aktualisSzog}deg)`;
+
+    
+    setTimeout(() => {
+        gomb.disabled = false;
+    }, 4200);
+};
+</script>
