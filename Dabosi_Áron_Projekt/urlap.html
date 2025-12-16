@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kaszínó</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1>KASZINÓ</h1>
+
+        <nav id="topnav">
+            <ul>
+                <li><a href="fooldal.html">Főoldal</a></li>
+
+                <li class="dropdown">
+                    <a href="#nogo">Infó</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="animacio.html">Animáció</a></li>
+                        <li><a href="urlap.html">Űrlap</a></li>
+                        <li><a href="tablazat.html">Tábla</a></li>
+                        <li><a href="galeria.html">Galéria</a></li>
+                        <li><a href="media.html">Média</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#nogo">Impresszum</a></li>
+            </ul>
+        </nav>
+    </header>
+           
+           <article>
+        
+   
+<div class="form-card">
+    <h2>Kaszinó regisztráció</h2>
+    <form action="">
+        <fieldset>
+            <legend>Vendég adatai</legend>
+
+            <p>
+                <label for="nev">
+                    Név:
+                    <input type="text" name="nev" id="nev" placeholder="név megadása.." required>
+                </label>
+                <small>Vezetéknév Keresztnév</small>
+            </p>
+
+            <p>
+                <label for="Telefon">
+                    Telefon:
+                    <input type="tel" name="Telefon" id="Telefon" placeholder="telefonszám megadása.." required>
+                </label>
+            </p>
+
+            <p>
+                <label for="cim">
+                    Lakcím:
+                    <input type="text" name="cim" id="cim" placeholder="lakcím megadása.." required>
+                </label>
+            </p>
+
+            <p>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="email cím megadása.." required>
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Belépő típusa</legend>
+
+            <p>
+                <label>
+                    <input type="radio" name="belepo" value="normal" checked>
+                    Normál belépő
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="radio" name="belepo" value="vip">
+                    VIP belépő
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Választott játékok</legend>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="jatek1" value="rulett" checked>
+                    Rulett
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="jatek2" value="blackjack">
+                    Blackjack
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="jatek3" value="poker">
+                    Póker
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="jatek4" value="slot">
+                    Nyerőgépek
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Látogatás időpontja</legend>
+
+            <p>
+                <label for="datum">
+                    Dátum:
+                    <input type="date" name="datum" id="datum" required>
+                </label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="reset">Alaphelyzet</button>
+            <button type="submit">Regisztráció</button>
+        </p>
+    </form>
+    </div>
+</article>
+        
+
+
+
+    <footer class="page-footer">
+
+        <div class="footer-boxes">
+            <div class="footer-col">
+                <h3>Kaszinó weboldalak</h3>
+                <ul>
+                    <li><a href="https://vegas.hu/">Vegas</a></li>
+                    <li><a href="https://www.pokerstars.com/hu/casino/">Pokerstars</a></li>
+                    <li><a href="https://kaszino.hu/">Kaszinó.hu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Kaszinó extrák és szabályok</h3>
+                <ul>
+                    <li><a href="#nogo">Stratégiák</a></li>
+                    <li><a href="#nogo">Érdekességek</a></li>
+                    <li><a href="#nogo">További infók</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">
+            Copyright © 2025 | Dabosi Áron
+        </p>
+
+    </footer>
+</body>
+
+</html>
+
